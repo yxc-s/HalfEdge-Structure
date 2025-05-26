@@ -76,6 +76,12 @@ namespace he{
 		VertexType* m_vertex;
 		VertexType* m_sourceVertex;
 		VertexType* m_targetVertex;
+
+		Edge* m_edge;
+		Face* m_face;
+		HalfEdge<T>* m_prevHalfEdge;
+		HalfEdge<T>* m_nextHalfEdge;
+		HalfEdge<T>* m_symmHalfEdge;
 	};
 
 }
