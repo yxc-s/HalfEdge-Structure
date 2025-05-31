@@ -1,6 +1,7 @@
 #pragma once
 
 #include <vector>
+#include <array>
 namespace he {
 
 #ifdef HALFEDGE_USE_DOUBLE
@@ -121,7 +122,7 @@ private:
     Halfedge_handle prev_, next_, twin_;
 };
 
-template<typename T>
+template<typename T = Real>
 class Mesh {
 public:
     using Vertex        = Vertex<T>;
